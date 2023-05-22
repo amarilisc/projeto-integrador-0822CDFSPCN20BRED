@@ -22,6 +22,7 @@ routes.patch('/products/:userid/:productid', ProductController.updateProduct) //
 routes.delete('/products/:userid/:productid', ProductController.deleteProduct) //Deletar um produto
 
 routes.get('/products', ProductController.getProducts) //Lista todos os produtos cadastrados
+routes.get('/products/:productid', ProductController.getProductById) //Busca o produto pelo id
 
 
 module.exports = routes

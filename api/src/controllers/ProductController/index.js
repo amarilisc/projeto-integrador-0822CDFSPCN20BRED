@@ -90,6 +90,23 @@ const ProductController = {
         }
 
     },
+    //Busca o produto pelo id
+    async getProductById(req, res) {
+
+        const { productid } = req.params
+
+        try{
+
+            const products = await Product.findByPk(productid)
+            return res.status(200).json(products)
+
+        } catch(err) {
+
+            return res.status(400).json(err)
+            
+        }
+
+    },
 
 }
 

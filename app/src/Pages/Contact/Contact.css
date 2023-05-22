@@ -10,7 +10,7 @@
 .form input, textarea {
     font-weight: 700;
     font-size: 1em;
-    background-color: var(--InputFormaBakground);
+    background-color: var(--InputFormBakground);
     border-radius: 0.5em;
     box-shadow: 0 0 0 0;
     border: 0 none;
