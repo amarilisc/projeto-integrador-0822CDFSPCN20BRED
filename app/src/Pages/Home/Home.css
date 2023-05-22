@@ -1,0 +1,43 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    margin: 3rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem
+}
+
+.products {
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.products img {
+    width: 80%;
+}
+
+.addToCartBttn {
+    border: solid 1px var(--tertiary);
+    border-radius: 20px;
+    color: var(--tertiary);
+    padding: 0.5rem;
+    background-color: white;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.addToCartBttn:hover {
+    background: var(--tertiary);
+    color: var(--white)
+}

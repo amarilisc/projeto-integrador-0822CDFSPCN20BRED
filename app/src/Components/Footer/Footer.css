@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    padding: 3rem;
+    width: 50%;
+    font-family: var(--font);
+    font-weight: 400;
+    background-color: var(--tertiary);
+}
+
+.port_footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2.4rem;
+}

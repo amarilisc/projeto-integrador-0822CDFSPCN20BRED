@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    font-family: var(--font);
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar img {
+    width: 10rem;
+}
+
+.cart {
+    position:absolute;
+    right: calc(50% - 450px);
+}
+
+/* media */
+
+@media (max-width: 630px) {
+    .navbar img {
+        display: none;
+    }
+}

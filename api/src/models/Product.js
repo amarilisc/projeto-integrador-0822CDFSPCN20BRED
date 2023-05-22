@@ -11,6 +11,10 @@ const Products = DbEcommerce.define('products', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    descricao: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     preco: DataTypes.DOUBLE,
     image1: {
         type: DataTypes.TEXT,

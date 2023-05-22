@@ -1,0 +1,14 @@
+.about {
+    margin:auto;
+    padding: 3rem;
+    width: 50%;
+}
+
+.about p, h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.about img { 
+    width: 100%;
+}
