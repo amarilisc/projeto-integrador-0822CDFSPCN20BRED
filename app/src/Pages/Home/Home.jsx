@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import axios from 'axios'
 import './Home.css'
+import Button from '../../Components/Button/Button'
+import { IoCartOutline } from 'react-icons/io5';
 
 function Home() {
 
@@ -38,19 +40,24 @@ function Home() {
           <h1>Novos Produtos</h1>
         </div>
         <div className="card">
-        {products.length === 0 ? (<p>Carregando...</p>) : (
-          products.map((products) => (
-            <div className="products" key={products.id}>
-              <h2>{products.nome}</h2>
-              <img src={products.image1} alt="Bolos" />
-              <p>{products.descricao}</p>
-              <p>R${products.preco},00</p>
-              <button className='addToCartBttn'>Comprar</button>
-            </div>
-          ))
-        )}</div>
+          {products === undefined ? (
+            <p>Carregando...</p>
+          ) : (
+            products.slice(0, 3).map((product) => (
+              <div className="products" key={product.id}>
+                <h2>{product.nome}</h2>
+                <img src={product.image1} alt="Bolos" />
+                <p>{product.descricao}</p>
+                <p>R${product.preco},00</p>
+                <div className="port__btn-home">
+                <Button color="noicon" text="Comprar" icon={<IoCartOutline />}/>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
       </div>
-    </div>
+      </div>
     </>
   )
 }

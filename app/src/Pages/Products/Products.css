@@ -1,7 +1,6 @@
-.home {
-    margin-top: 4em;
-    padding: 0em 4em;
+.about {
     color: var(--secundary);
+    padding: 0em 4em;
 }
 
 .title {
@@ -27,15 +26,16 @@
     width: 300px;
     text-align: center;
     padding: 1rem;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .products img {
     width: 80%;
 }
 
-.port__btn-home {
+
+.port__btn-prc {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    /* padding: 2rem; */
 }

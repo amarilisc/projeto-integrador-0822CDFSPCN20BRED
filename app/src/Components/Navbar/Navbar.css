@@ -5,11 +5,13 @@
     margin: 1rem;
     font-family: var(--font);
     font-weight: 700;
+    gap: 1rem
 }
 
 .navbar ul {
     display: flex;
     gap: 1rem;
+    color: var(--secundary);
 }
 
 .navbar img {
