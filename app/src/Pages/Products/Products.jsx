@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import './Products.css';
-import ProductCard from '../../Components/ProductCard/ProductCard';
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import './Products.css'
+import ProductCard from '../../Components/ProductCard/ProductCard'
 
 
 function Products() {
-  const url = 'http://localhost:1234/products';
+  const url = 'http://localhost:1234/products'
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([])
 
   const getProducts = async () => {
     try {
-      const response = await axios.get(url);
-      const data = response.data;
-      setProducts(data);
+      const response = await axios.get(url)
+      const data = response.data
+      setProducts(data)
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   };
 
   useEffect(() => {
-    getProducts();
+    getProducts()
   }, []);
 
   return (
