@@ -1,6 +1,6 @@
 .form {
     margin: auto;
-    width: 50%;
+    width: 40%;
     font-weight: 700;
     font-size: 1em;
     color: var(--secundary);
@@ -20,8 +20,8 @@
 }
 
 .port__text {
-    padding: 1rem 0rem;
-    text-align: justify
+    padding: 0.5rem 4rem;
+    text-align: center
 }
 
 .port__text p {

@@ -1,5 +1,7 @@
 import React from 'react'
-import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import InstagramIcon from '@mui/icons-material/Instagram'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 import './Footer.css'
 
@@ -12,9 +14,9 @@ function Footer() {
         </ul>
 
         <ul className="port_footer-social">
-          <li><a href="#footer"><FiFacebook color='#4F0909' size={32}/></a></li>
-          <li><a href="#footer"><FiInstagram color='#4F0909' size={32}/></a></li>
-          <li><a href="#footer"><FiTwitter color='#4F0909' size={32} /></a></li>
+          <li><a href="#footer"><FacebookIcon color='#4F0909' size={32}/></a></li>
+          <li><a href="#footer"><InstagramIcon color='#4F0909' size={32}/></a></li>
+          <li><a href="#footer"><TwitterIcon color='#4F0909' size={32} /></a></li>
         </ul>
 
       </div>
