@@ -1,41 +1,15 @@
 .home {
-    margin-top: 4em;
+    margin-top: 2em;
     padding: 0em 4em;
     color: var(--secundary);
 }
 
 .title {
     text-align: center;
-    margin: 3rem;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5rem;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
+    margin: 2rem;
 }
 
 .products__table {
     display: flex;
     justify-content: center;
-}
-
-.products {
-    width: 300px;
-    text-align: center;
-    padding: 1rem;
-    gap: 3rem;
-}
-
-.products img {
-    width: 80%;
-}
-
-.port__btn-home {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
 }

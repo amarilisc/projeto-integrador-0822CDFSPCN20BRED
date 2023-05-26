@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import fofelhoslogo from '../../assets/fofelhoslogo.png'
-import { IoCartOutline } from 'react-icons/io5';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 
 import './Navbar.css'
 
@@ -31,8 +31,8 @@ function Navbar() {
         </ul>
       </div>
       <div className="cart">
-        <Link to={`/cart`}>
-          <IoCartOutline color='#4F0909' size={32} />
+        <Link to={`/`}>
+          <ShoppingCartIcon color='#FF7BAC'/>
         </Link>
       </div>
     </div>

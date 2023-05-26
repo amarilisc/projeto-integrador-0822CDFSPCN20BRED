@@ -1,0 +1,13 @@
+.title-card {
+    padding: 1rem 2rem;
+}
+
+.text-card {
+    height: 180px;
+}
+
+.text-price {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}

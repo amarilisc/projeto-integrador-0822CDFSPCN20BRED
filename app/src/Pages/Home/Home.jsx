@@ -1,65 +1,48 @@
-import React from 'react'
-import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
-import axios from 'axios'
-import './Home.css'
-import Button from '../../Components/Button/Button'
-import { IoCartOutline } from 'react-icons/io5';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import './Home.css';
+import ProductCard from '../../Components/ProductCard/ProductCard';
+
 
 function Home() {
+  const url = 'http://localhost:1234/products';
 
-  const url = 'http://localhost:1234/products'
-  
-  const [products, setProducts] = useState([])
+  const [products, setProducts] = useState([]);
 
-  const getProducts = async() => {
+  const getProducts = async () => {
     try {
-      const response = await axios.get(url)
-      
-      const data = response.data
-      
-      setProducts(data)
-
+      const response = await axios.get(url);
+      const data = response.data;
+      setProducts(data);
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
 
   useEffect(() => {
-
-    getProducts()
-
-  }, [])
-  
+    getProducts();
+  }, []);
 
   return (
     <>
-    <div className="home">
-      <div className="container">
-        <div className="title">
-          <h1>Novos Produtos</h1>
+      <div className="home">
+        <div className="container">
+          <div className="title">
+            <h1>Novos Produtos</h1>
+          </div>
         </div>
         <div className="card">
           {products === undefined ? (
             <p>Carregando...</p>
           ) : (
             products.slice(0, 3).map((product) => (
-              <div className="products" key={product.id}>
-                <h2>{product.nome}</h2>
-                <img src={product.image1} alt="Bolos" />
-                <p>{product.descricao}</p>
-                <p>R${product.preco},00</p>
-                <div className="port__btn-home">
-                <Button color="noicon" text="Comprar" icon={<IoCartOutline />}/>
-                </div>
-              </div>
+              <ProductCard key={product.id} product={product} price={product.preco} buttonText="Saiba mais" />
             ))
           )}
         </div>
       </div>
-      </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

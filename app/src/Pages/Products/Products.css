@@ -1,11 +1,11 @@
-.about {
-    color: var(--secundary);
+.menu {
+    margin-top: 2em;
     padding: 0em 4em;
 }
 
 .title {
+    color: var(--secundary);
     text-align: center;
-    margin: 3rem;
 }
 
 .card {

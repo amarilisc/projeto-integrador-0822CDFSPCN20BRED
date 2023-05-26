@@ -10,7 +10,6 @@ import Contact from './Pages/Contact/Contact'
 import About from './Pages/About/About'
 import Cart from './Pages/Cart/Cart'
 
-
 const router = createBrowserRouter([
   {
       path:"/",
