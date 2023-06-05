@@ -4,10 +4,13 @@ import axios from 'axios'
 import { Box, Button, Typography } from "@mui/material"
 import Grid from '@mui/material/Grid'
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { useDispatch } from 'react-redux'
+import { setQuantidade } from '../../redux/cartSlice'
 
 function Product() {
   const { id } = useParams()
   const [product, setProduct] = useState(null)
+  const dispatch = useDispatch()
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -66,6 +69,7 @@ function Product() {
           </Typography>
 
           <Button
+            onClick={() => dispatch(setQuantidade())}
             component={Link}
             to={`/product/${product.id}`}
             sx={{

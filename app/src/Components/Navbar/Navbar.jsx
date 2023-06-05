@@ -2,10 +2,12 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import fofelhoslogo from '../../assets/fofelhoslogo.png'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
-
 import './Navbar.css'
+import { useSelector } from 'react-redux'
+import { selectCart } from '../../redux/cartSlice'
 
 function Navbar() {
+  const {quantidade} = useSelector(selectCart)
   return (
     <div className="navbar">
       <div className="left">
@@ -33,6 +35,7 @@ function Navbar() {
       <div className="cart">
         <Link to={`/`}>
           <ShoppingCartIcon color='#FF7BAC'/>
+          {quantidade}
         </Link>
       </div>
     </div>
